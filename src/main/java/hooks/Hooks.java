@@ -16,7 +16,7 @@ import java.time.Duration;
 public class Hooks {
 
     //   Edit the directory of the application according to your installation directory
-    private static final String MUSEEKS = "E:\\Projects\\src\\main\\resources\\Program\\museeks\\Museeks.exe";
+    private static final String MUSEEKS = "C:\\Users\\filip\\AppData\\Local\\Programs\\museeks\\Museeks.exe";
 
     DriverManager driverManager = new DriverManager();
 
