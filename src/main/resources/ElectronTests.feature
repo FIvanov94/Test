@@ -15,7 +15,6 @@ Feature: Electron Tests
     When I click the Add Music button
     Then the "Settings" section should be opened
 
-
   @ElectronTest3
   Scenario: Verify music can be added
     Given I am in the "Library" section
