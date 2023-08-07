@@ -1,14 +1,10 @@
 package utils;
 
-import driver.DriverManager;
-
-import javax.tools.Tool;
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.time.Duration;
 
 public class WindowsPopupAction {
 
