@@ -10,7 +10,7 @@ public class DriverManager {
 
 
     public void setDriver(String binaryPath) {
-        System.setProperty("webdriver.chrome.driver", "E:\\Programs\\driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "E:\\Projects\\src\\main\\resources\\chromeDriver\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.setBinary(binaryPath);
         options.addArguments("--remote-debugging-port=9222");

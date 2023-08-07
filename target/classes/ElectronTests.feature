@@ -1,14 +1,14 @@
 @ElectronTests
 Feature: Electron Tests
 
-#  @ElectronTest1
-#  Scenario: Verify volume slider is displayed when hovering on speaker icon
-#    Given I am in the "Library" section
-#    When I click the Add Music button
-#    And I add files successfully
-#    And I adjust the volume
-#    Then the volume level should be changed
-#
+  @ElectronTest1
+  Scenario: Verify volume slider is displayed when hovering on speaker icon
+    Given I am in the "Library" section
+    When I click the Add Music button
+    And I add files successfully
+    And I adjust the volume
+    Then the volume level should be changed
+
 #  @ElectronTest2
 #  Scenario: Verify Add Music button leads to Settings section
 #    Given I am in the "Library" section
@@ -62,19 +62,19 @@ Feature: Electron Tests
 #    And I try to create a playlist
 #    Then the playlist should be created successfully
 #
-  @ElectronTest8
-  Scenario Outline: Search for artist <artist>
-    Given I am in the "Library" section
-    When I click the Add Music button
-    And I add files successfully
-    And I search for artist "<artist>"
-    Then only the song by "<artist>" artist should be displayed in the track list
-
-    Examples:
-      | artist         |
-      | Nightwish      |
-      | Russell Allen  |
-      | Unknown artist |
+#  @ElectronTest8
+#  Scenario Outline: Search for artist <artist>
+#    Given I am in the "Library" section
+#    When I click the Add Music button
+#    And I add files successfully
+#    And I search for artist "<artist>"
+#    Then only the song by "<artist>" artist should be displayed in the track list
+#
+#    Examples:
+#      | artist         |
+#      | Nightwish      |
+#      | Russell Allen  |
+#      | Unknown artist |
 #
 #  @ElectronTest9
 #  Scenario: Verify that pressing Next track button skips to the next track in the list
