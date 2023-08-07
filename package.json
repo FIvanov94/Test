@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "electron-chromedriver": "^24.6.5",
+    "webdriverio": "^8.13.13"
+  }
+}
