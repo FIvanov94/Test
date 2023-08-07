@@ -31,15 +31,7 @@ public class Hooks {
     @After()
     public void takeScreenShot(Scenario scenario) {
         if (scenario.isFailed()) {
-            TakesScreenshot takesScreenshot = (TakesScreenshot) DriverManager.getDriver();
-            File screenShotFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
-
-            try {
-                FileUtils.copyFile(screenShotFile, new File("E:\\Projects\\src\\main\\resources\\screenshot\\".concat(String.format("screenshot_%s",
-                        scenario.getName().concat(".png")))));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            scenario.attach(((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.BYTES), "image/jpeg", "Screenshot_".concat(scenario.getName()));
         }
     }
 
